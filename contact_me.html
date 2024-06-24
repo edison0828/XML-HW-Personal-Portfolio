@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./project1.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <nav class="container-fluid">
+      <ul>
+        <li><strong>Portfolio</strong></li>
+      </ul>
+      <ul>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./about.html">About/Resume</a></li>
+        <li><a href="./project.html">Projects</a></li>
+        <li><a href="./contact_me.html" role="button">Contact Me</a></li>
+      </ul>
+    </nav>
+    <main class="container">
+      <div class="grid">
+        <section>
+          <hgroup>
+            <h2>Contact Me</h2>
+            <h3>Get in Touch</h3>
+          </hgroup>
+          <p>
+            If you have any questions or just want to say hello, feel free to
+            sent me an email !
+          </p>
+          <form
+            action="http://localhost:3000/submit-form"
+            method="post"
+            enctype="application/x-www-form-urlencoded"
+          >
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            /><br />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            /><br />
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea
+            ><br />
+            <button type="submit">Send</button>
+            <div id="formMessage"></div>
+            <!-- 新增用於顯示訊息的元素 -->
+          </form>
+        </section>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="container">
+      <small>Built with <a href="https://picocss.com">Edison Lin</a> </small>
+    </footer>
+    <!-- Script at the bottom of the body -->
+    <!-- ./ Footer -->
+  </body>
+</html>
